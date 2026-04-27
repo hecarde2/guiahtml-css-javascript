@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<!-- Permite usar caracteres especiales -->
+<meta charset="UTF-8">
+
+<!-- Hace la página responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Título de la pestaña -->
+<title>Prueba Riwi</title>
+
+<!-- Conexión con CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<!-- Contenedor principal con Grid -->
+<div class="contenedor">
+
+
+<!-- Encabezado -->
+<header class="header">
+
+<h1>Prueba Técnica Riwi</h1>
+
+<p>Ejercicio con Grid y JavaScript</p>
+
+</header>
+
+
+
+<!-- Menú navegación -->
+<nav class="menu">
+
+<a href="#">Inicio</a>
+
+<a href="#">Perfil</a>
+
+<a href="#">Contacto</a>
+
+</nav>
+
+
+
+<!-- Primera sección -->
+<section class="card">
+
+<h2>Cambiar Texto</h2>
+
+
+<!-- Texto que JavaScript cambiará -->
+<p id="mensaje">
+Bienvenido a la prueba de Riwi
+</p>
+
+
+<!-- Botón que llama función -->
+<button onclick="cambiarTexto()">
+
+Cambiar texto
+
+</button>
+
+</section>
+
+
+
+
+
+<!-- Segunda sección -->
+<section class="card">
+
+<h2>Ocultar Imagen</h2>
+
+
+<!-- Imagen que se esconde -->
+<img
+id="foto"
+src="https://picsum.photos/400/250"
+alt="imagen ejemplo">
+
+
+<!-- Botón evento -->
+<button onclick="ocultarImagen()">
+
+Mostrar/Ocultar Imagen
+
+</button>
+
+</section>
+
+
+
+
+<!-- Sección formulario -->
+<section class="formulario">
+
+<h2>Formulario Registro</h2>
+
+
+<form>
+
+
+<!-- Campo nombre -->
+<div class="grupo">
+
+<label>Nombre</label>
+
+<input 
+type="text"
+placeholder="Ingrese nombre">
+
+</div>
+
+
+
+<!-- Campo correo -->
+<div class="grupo">
+
+<label>Correo</label>
+
+<input
+type="email"
+placeholder="Ingrese correo">
+
+</div>
+
+
+
+
+<!-- Campo edad -->
+<div class="grupo">
+
+<label>Edad</label>
+
+<input type="number">
+
+</div>
+
+
+
+
+<!-- Campo fecha -->
+<div class="grupo">
+
+<label>Fecha nacimiento</label>
+
+<input type="date">
+
+</div>
+
+
+
+
+<!-- Selector ciudad -->
+<div class="grupo">
+
+<label>Ciudad</label>
+
+<select>
+
+<option>Barranquilla</option>
+
+<option>Medellín</option>
+
+<option>Bogotá</option>
+
+</select>
+
+</div>
+
+
+
+
+<!-- Botones radio -->
+<div class="grupo">
+
+<label>Rol favorito</label>
+
+<input type="radio" name="rol">
+Frontend
+
+<input type="radio" name="rol">
+Backend
+
+</div>
+
+
+
+
+<!-- Checkboxes -->
+<div class="grupo">
+
+<label>Tecnologías</label>
+
+<input type="checkbox">
+HTML
+
+<input type="checkbox">
+CSS
+
+<input type="checkbox">
+JavaScript
+
+</div>
+
+
+
+
+
+<!-- Área texto -->
+<div class="grupo">
+
+<label>Descripción</label>
+
+<textarea rows="5">
+
+</textarea>
+
+</div>
+
+
+
+
+<!-- Botón enviar -->
+<button type="submit">
+
+Enviar
+
+</button>
+
+
+</form>
+
+</section>
+
+
+
+
+<!-- Pie página -->
+<footer class="footer">
+
+<p>Prueba creada para Riwi</p>
+
+</footer>
+
+
+</div>
+
+
+<!-- Conexión con JS -->
+<script src="app.js"></script>
+
+</body>
+</html>

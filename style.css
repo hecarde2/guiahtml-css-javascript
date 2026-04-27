@@ -1,0 +1,224 @@
+/* Quita márgenes por defecto */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+/* Fondo general */
+body{
+background:#f4f4f4;
+font-family:Arial;
+padding:20px;
+}
+
+
+
+/* Grid principal */
+.contenedor{
+
+display:grid;
+
+/* Dos columnas */
+grid-template-columns:
+repeat(2,1fr);
+
+/* Espacio entre cajas */
+gap:20px;
+
+/* Ancho máximo */
+max-width:1200px;
+
+margin:auto;
+
+}
+
+
+
+
+/* Encabezado */
+.header{
+
+background:#111;
+
+color:white;
+
+padding:30px;
+
+text-align:center;
+
+border-radius:10px;
+
+}
+
+
+
+
+/* Menú */
+.menu{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+background:blue;
+
+padding:20px;
+
+border-radius:10px;
+
+}
+
+
+/* Links menú */
+.menu a{
+
+color:white;
+
+text-decoration:none;
+
+}
+
+
+
+/* Tarjetas */
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:0 3px 8px rgba(0,0,0,.2);
+
+}
+
+
+
+/* Imagen */
+.card img{
+
+width:100%;
+
+margin-top:20px;
+
+border-radius:10px;
+
+}
+
+
+
+/* Botones */
+button{
+
+margin-top:20px;
+
+padding:12px;
+
+background:black;
+
+color:white;
+
+border:none;
+
+cursor:pointer;
+
+}
+
+
+
+
+/* Sección formulario */
+.formulario{
+
+background:white;
+
+padding:40px;
+
+border-radius:10px;
+
+}
+
+
+
+/* Grid del formulario */
+form{
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:20px;
+
+}
+
+
+
+/* Agrupar label + input */
+.grupo{
+
+display:flex;
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+
+
+
+/* Inputs */
+input,
+select,
+textarea{
+
+padding:12px;
+
+border:1px solid gray;
+
+border-radius:8px;
+
+}
+
+
+
+/* Footer */
+.footer{
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+border-radius:10px;
+
+}
+
+
+
+/* Responsive */
+@media(max-width:768px){
+
+.contenedor{
+
+grid-template-columns:1fr;
+
+}
+
+
+form{
+
+grid-template-columns:1fr;
+
+}
+
+}
